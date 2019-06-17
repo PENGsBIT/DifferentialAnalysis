@@ -2,14 +2,14 @@
 import requests
 import json
 import pymysql
-import conn as conn
+import env
 from datetime import datetime
 
 # import jsonpath
 # from bs4 import BeautifulSoup
 
-conn = pymysql.connect(host=conn.db_host, port=conn.db_port, user=conn.db_user, passwd=conn.db_pwd, db=conn.db_db)
-cur = conn.cursor()
+connect = pymysql.connect(host=env.host, port=env.port, user=env.user, passwd=env.password, db=env.db)
+cur = connect.cursor()
 tablename = 'kaggle_datasets'
 
 urlpre = 'https://www.kaggle.com/datasets_v2.json?sortBy=votes&group=public&pageSize=200&page='
@@ -21,6 +21,7 @@ headers = {
     'Referer': 'http://www.kaggle.com/',
     'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.4882.400 QQBrowser/9.7.13059.400'
 }
+
 
 def getdatasetid():
     for i in range(830):
@@ -58,8 +59,10 @@ def getdatasetid():
             # if cur.execute('select * from userdb.kaggle_datasets where id = ' + str(kaggleSetId)):
             #     continue
 
-            insertValue = '("' + title + '","' + str(kaggleSetId)+'","'+ str(viewCount) + '","' + str(downloadCount) + '","' + str(created)+ '","'\
-                          + str(updated) + '","' + str(size) + '","' + str(subsets) + '","' + tags + '","' + description + '");'
+            insertValue = '("' + title + '","' + str(kaggleSetId) + '","' + str(viewCount) + '","' + str(
+                downloadCount) + '","' + str(created) + '","' \
+                          + str(updated) + '","' + str(size) + '","' + str(
+                subsets) + '","' + tags + '","' + description + '");'
             # print("insertValue" + insertValue)
 
             # sql = "insert into kaggle.kaggle_datasets (title, kaggleSetId, view, download, created, updated, size, subsets, tags,description) values ('{}','{}','{}','{}','{}','{}','{}','{}','{}');"\
@@ -67,7 +70,7 @@ def getdatasetid():
             sql = 'insert into kaggle.kaggle_datasets (title, kaggleSetId, view, download, created, updated, size, subsets, tags,description)values ' + insertValue
             try:
                 cur.execute(sql)
-                conn.commit()
+                env.commit()
                 print("insert Page No.%d ,setID %d,Set %s" % (i, j, title))
             except Exception as e:
                 print(e)
