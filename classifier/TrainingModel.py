@@ -2,7 +2,6 @@
 import numpy as np
 import pymysql
 import env
-from sklearn import preprocessing
 from classifier.classification import classifierTraining
 from classifier.normalized import *
 
@@ -16,7 +15,7 @@ if __name__ == '__main__':
     colName = np.array(["view", "download", "created", "updated", "size", "subsets"])
     target = formatTarget(data[:, 1])
     structuredData = formatStructuredData(data[:, [0, 4, 5]])
-    timeData = data[:, [2, 3]]
+    timeData = formatTime(data[:, [2, 3]])
     classifierTraining(data, structuredData, timeData, target, colName)
     # data = list(cur.fetchall())
     # data=pd.DataFrame(data)

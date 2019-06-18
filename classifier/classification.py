@@ -2,14 +2,23 @@ from sklearn.tree import DecisionTreeClassifier, tree
 from sklearn.tree.export import export_graphviz
 import tensorflow as tf
 from tensorflow import keras
+import numpy as np
 from joblib import dump, load
-import pickle
+from sklearn.tree.export import export_text
+from sklearn.metrics import accuracy_score
 
 
 def classifierTraining(data, sData, time, target, colName):
-    decision_tree = DecisionTreeClassifier(random_state=0, max_depth=2)
-    decision_tree = decision_tree.fit(sData, target)
+    target = target.astype('int')
+    temp = np.concatenate((sData, time), axis=1)
+    decision_tree = DecisionTreeClassifier(random_state=1, max_depth=5)
+    decision_tree = decision_tree.fit(temp, target)
     dump(decision_tree, 'decision_tree.model')
+    sCol = ["view", "size", "subsets", "created", "updated"]
+    r = export_text(decision_tree, feature_names=sCol)
+    print(r)
+    predict = decision_tree.predict(sData)
+    print(accuracy_score(target, predict))
 
 
 def DNNclassiferTraining(data, sData, time, target, colName):
@@ -22,9 +31,10 @@ def DNNclassiferTraining(data, sData, time, target, colName):
                                                 n_classes=2,
                                                 model_dir="/DNN_Model")
     # 指定数据，以及训练的步数
-    classifier.fit(x=sData, y=target, steps=2000)
+    classifier.fit(x=data, y=target, steps=2000)
 
-def classifier(sData, time):
+
+def classifier(data, time):
     decision_tree = load('decision_tree.model')
-    decision_tree.predict(sData)
+    res = decision_tree.predict(data)
     print()
