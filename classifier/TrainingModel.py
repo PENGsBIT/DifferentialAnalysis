@@ -2,7 +2,7 @@
 import numpy as np
 import pymysql
 import env
-from classifier.classification import classifierTraining
+from classifier.classification import *
 from classifier.normalized import *
 
 if __name__ == '__main__':
@@ -13,10 +13,17 @@ if __name__ == '__main__':
     data = np.array(cur.fetchall())
     cur.close()
     colName = np.array(["view", "download", "created", "updated", "size", "subsets"])
-    target = formatTarget(data[:, 1])
-    structuredData = formatStructuredData(data[:, [0, 4, 5]])
-    timeData = formatTime(data[:, [2, 3]])
-    classifierTraining(data, structuredData, timeData, target, colName)
+    decision = False
+    if decision:
+        target = formatTarget(data[:, 1])
+        structuredData = formatStructuredData(data[:, [0, 4, 5]])
+        timeData = formatTime(data[:, [2, 3]])
+        classifierTraining(data, structuredData, timeData, target, colName)
+    else:
+        target = data[:, 1]
+        structuredData = data[:, [0, 4, 5]]
+        timeData = data[:, [2, 3]]
+        DNNclassiferTraining(data, structuredData, timeData, target, colName)
     # data = list(cur.fetchall())
     # data=pd.DataFrame(data)
     # print(data.isnull().sum())

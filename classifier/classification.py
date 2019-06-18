@@ -22,6 +22,8 @@ def classifierTraining(data, sData, time, target, colName):
 
 
 def DNNclassiferTraining(data, sData, time, target, colName):
+    target = target.astype('int')
+    temp = np.concatenate((sData, time), axis=1)
     # 每行数据3个特征，都是real-value的
     feature_columns = [tf.contrib.layers.real_valued_column("", dimension=3)]
 
@@ -29,9 +31,28 @@ def DNNclassiferTraining(data, sData, time, target, colName):
     classifier = tf.contrib.learn.DNNClassifier(feature_columns=feature_columns,
                                                 hidden_units=[10, 20, 10],
                                                 n_classes=2,
-                                                model_dir="/DNN_Model")
+                                                model_dir="./DNN_Model")
+
+    # Define the training inputs
+    def get_train_inputs():
+        x = tf.constant(np.array(sData.astype('float')))
+        y = tf.constant(np.array(target))
+        return x, y
+
     # 指定数据，以及训练的步数
-    classifier.fit(x=data, y=target, steps=2000)
+    classifier.fit(input_fn=get_train_inputs, steps=2000)
+
+    # 模型评估
+    accuracy_score = classifier.evaluate(x=np.array(sData.astype('float')), y=np.array(target))["accuracy"]
+    print('Accuracy: {0:f}'.format(accuracy_score))
+
+    # 直接创建数据来进行预测
+    # Classify two new flower samples.
+    def new_samples():
+        return np.array([[3200, 58000, 1], [20, 200, 6]], dtype=np.float32)
+
+    predictions = list(classifier.predict(input_fn=new_samples))
+    print("New Samples, Class Predictions:{}".format(predictions))
 
 
 def classifier(data, time):
