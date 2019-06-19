@@ -70,7 +70,7 @@ def enen(ccount, cid, last_id):
             conn.commit()
         except:
             print(sql)
-            with codecs.open("error.txt",'a','utf-8') as f:
+            with codecs.open("error.txt",'classifier','utf-8') as f:
                 f.writelines(sql)
                 f.write('\n')
     enen(ccount, cid, last_id)

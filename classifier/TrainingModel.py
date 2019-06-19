@@ -1,9 +1,6 @@
 # coding=UTF-8
 import numpy as np
-import pymysql
 import env
-from classifier.classification import *
-from classifier.normalized import *
 import MySQLdb
 
 if __name__ == '__main__':

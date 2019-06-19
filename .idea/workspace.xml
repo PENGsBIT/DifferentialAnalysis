@@ -2,18 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1138de05-b5e5-459f-ae72-ea8737aafa49" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/DifferentialAnalysis.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DifferentialAnalysis.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RandomForest.py" beforeDir="false" afterPath="$PROJECT_DIR$/different/isolation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classifier/Linear_Model/graph.pbtxt" beforeDir="false" afterPath="$PROJECT_DIR$/classifier/Linear_Model/graph.pbtxt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classifier/Linear_Model/model.ckpt-20000.meta" beforeDir="false" afterPath="$PROJECT_DIR$/classifier/Linear_Model/model.ckpt-20000.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classifier/TrainingModel.py" beforeDir="false" afterPath="$PROJECT_DIR$/classifier/TrainingModel.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classifier/classification.py" beforeDir="false" afterPath="$PROJECT_DIR$/classifier/classification.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classifier/decision_tree.model" beforeDir="false" afterPath="$PROJECT_DIR$/classifier/decision_tree.model" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classifier/normalized.py" beforeDir="false" afterPath="$PROJECT_DIR$/classifier/normalized.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler/get_competetions.py" beforeDir="false" afterPath="$PROJECT_DIR$/crawler/get_competetions.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/init.py" beforeDir="false" afterPath="$PROJECT_DIR$/init.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iris/iris_model/checkpoint" beforeDir="false" afterPath="$PROJECT_DIR$/iris/iris_model/checkpoint" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iris/iris_model/graph.pbtxt" beforeDir="false" afterPath="$PROJECT_DIR$/iris/iris_model/graph.pbtxt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iris/iris_model/model.ckpt-0.data-00000-of-00001" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iris/iris_model/model.ckpt-0.index" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iris/iris_model/model.ckpt-0.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iris/iris_model/model.ckpt-6000.meta" beforeDir="false" afterPath="$PROJECT_DIR$/iris/iris_model/model.ckpt-6000.meta" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,11 +35,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/classifier/classification.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="72" column="10" lean-forward="true" selection-start-line="72" selection-start-column="10" selection-end-line="72" selection-end-column="10" />
+            <state relative-caret-position="231">
+              <caret line="81" column="18" selection-start-line="81" selection-start-column="18" selection-end-line="81" selection-end-column="18" />
               <folding>
                 <element signature="e#0#53#0" expanded="true" />
               </folding>
@@ -50,25 +48,60 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/classifier/TrainingModel.py">
+        <entry file="file://$PROJECT_DIR$/different/differTrain.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="329">
-              <caret line="22" column="42" lean-forward="true" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
+            <state relative-caret-position="504">
+              <caret line="27" selection-start-line="27" selection-end-line="27" />
               <folding>
-                <element signature="e#15#33#0" expanded="true" />
+                <element signature="e#24#56#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/different/localOutlierFactor.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="294">
+              <caret line="7" column="46" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
+              <folding>
+                <element signature="e#0#46#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/init.py">
+        <entry file="file://C:/Python27/Lib/site-packages/sklearn/neighbors/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="497">
-              <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
+            <state relative-caret-position="588">
+              <caret line="25" column="39" selection-start-line="24" selection-start-column="16" selection-end-line="25" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/different/__init__.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/different/isolation.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="630">
+              <caret line="15" column="14" lean-forward="true" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
               <folding>
-                <element signature="e#0#14#0" expanded="true" />
+                <element signature="e#0#44#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/classifier/TrainingModel.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-588">
+              <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -87,9 +120,12 @@
       <find>numpy.core.multiarray</find>
       <find>x[i, col_num]</find>
       <find>coonect</find>
+      <find>instance.tables[0].D</find>
+      <find>instance.</find>
     </findStrings>
     <replaceStrings>
       <replace>x</replace>
+      <replace>D</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -107,9 +143,13 @@
         <option value="$PROJECT_DIR$/iris/decision.py" />
         <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/classifier/normalized.py" />
-        <option value="$PROJECT_DIR$/classifier/TrainingModel.py" />
         <option value="$PROJECT_DIR$/init.py" />
+        <option value="$PROJECT_DIR$/classifier/TrainingModel.py" />
+        <option value="$PROJECT_DIR$/different/differ.py" />
+        <option value="$PROJECT_DIR$/different/differTrain.py" />
         <option value="$PROJECT_DIR$/classifier/classification.py" />
+        <option value="$PROJECT_DIR$/different/isolation.py" />
+        <option value="$PROJECT_DIR$/different/localOutlierFactor.py" />
       </list>
     </option>
   </component>
@@ -137,18 +177,7 @@
             <path>
               <item name="DifferentialAnalysis" type="b2602c69:ProjectViewProjectNode" />
               <item name="DifferentialAnalysis" type="462c0819:PsiDirectoryNode" />
-              <item name="classifier" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DifferentialAnalysis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DifferentialAnalysis" type="462c0819:PsiDirectoryNode" />
-              <item name="classifier" type="462c0819:PsiDirectoryNode" />
-              <item name="DNN_Model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DifferentialAnalysis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DifferentialAnalysis" type="462c0819:PsiDirectoryNode" />
-              <item name="iris" type="462c0819:PsiDirectoryNode" />
+              <item name="different" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -161,20 +190,23 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/different" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\CODE\DifferentialAnalysis" />
-      <recent name="D:\CODE\DifferentialAnalysis\classifier" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\CODE\DifferentialAnalysis\classifier1" />
+      <recent name="D:\CODE\DifferentialAnalysis\different" />
       <recent name="D:\CODE\DifferentialAnalysis\iris" />
       <recent name="D:\CODE\DifferentialAnalysis\classifier" />
       <recent name="D:\CODE\DifferentialAnalysis" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\CODE\DifferentialAnalysis\different" />
+      <recent name="D:\CODE\DifferentialAnalysis" />
+      <recent name="D:\CODE\DifferentialAnalysis\classifier" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -189,7 +221,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.TrainingModel">
+  <component name="RunManager" selected="Python.localOutlierFactor">
     <configuration name="TrainingModel" type="PythonConfigurationType" factoryName="Python" singleton="false" temporary="true">
       <module name="DifferentialAnalysis" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -272,7 +304,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="decision" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="differ" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="DifferentialAnalysis" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -280,12 +312,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/iris" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/different" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/iris/decision.py" />
+      <option name="SCRIPT_NAME" value="D:\CODE\DifferentialAnalysis\different\differTrain.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -294,23 +326,20 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="localOutlierFactor" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="DifferentialAnalysis" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/different" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/different/localOutlierFactor.py" />
       <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
-      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="true" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
       <option name="INPUT_FILE" value="" />
@@ -319,17 +348,17 @@
     <list>
       <item itemvalue="Python.__init__" />
       <item itemvalue="Python.classification" />
-      <item itemvalue="Python.test" />
       <item itemvalue="Python.TrainingModel" />
-      <item itemvalue="Python.decision" />
+      <item itemvalue="Python.differ" />
+      <item itemvalue="Python.localOutlierFactor" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.localOutlierFactor" />
+        <item itemvalue="Python.differ" />
         <item itemvalue="Python.TrainingModel" />
         <item itemvalue="Python.__init__" />
         <item itemvalue="Python.classification" />
-        <item itemvalue="Python.test" />
-        <item itemvalue="Python.decision" />
       </list>
     </recent_temporary>
   </component>
@@ -349,7 +378,7 @@
       <workItem from="1560489414854" duration="25780000" />
       <workItem from="1560823780435" duration="10041000" />
       <workItem from="1560860919485" duration="2581000" />
-      <workItem from="1560909161478" duration="10500000" />
+      <workItem from="1560909161478" duration="21966000" />
     </task>
     <task id="LOCAL-00001" summary="add crawler">
       <created>1560489035387</created>
@@ -379,17 +408,31 @@
       <option name="project" value="LOCAL" />
       <updated>1560861980125</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add LinearClassifier">
+      <created>1560924112857</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1560924112857</updated>
+    </task>
+    <task id="LOCAL-00006" summary="add LinearClassifier">
+      <created>1560924239816</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1560924239816</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51088000" />
+    <option name="totallyTimeSpent" value="62554000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23773988" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1924307" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -400,7 +443,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32924107" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50053304" side_tool="true" weight="0.39955357" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.32924107" />
@@ -421,7 +464,8 @@
     <MESSAGE value="add decisionTree" />
     <MESSAGE value="fix decisionTree add time" />
     <MESSAGE value="add DNNclassifier" />
-    <option name="LAST_COMMIT_MESSAGE" value="add DNNclassifier" />
+    <MESSAGE value="add LinearClassifier" />
+    <option name="LAST_COMMIT_MESSAGE" value="add LinearClassifier" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -436,7 +480,9 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/DifferentialAnalysis$decision.coverage" NAME="decision Coverage Results" MODIFIED="1560826451128" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/iris" />
-    <SUITE FILE_PATH="coverage/DifferentialAnalysis$TrainingModel.coverage" NAME="TrainingModel Coverage Results" MODIFIED="1560918243535" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/classifier" />
+    <SUITE FILE_PATH="coverage/DifferentialAnalysis$differ.coverage" NAME="differ Coverage Results" MODIFIED="1560931829605" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/different" />
+    <SUITE FILE_PATH="coverage/DifferentialAnalysis$localOutlierFactor.coverage" NAME="localOutlierFactor Coverage Results" MODIFIED="1560932739431" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/different" />
+    <SUITE FILE_PATH="coverage/DifferentialAnalysis$TrainingModel.coverage" NAME="TrainingModel Coverage Results" MODIFIED="1560925261460" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/classifier" />
     <SUITE FILE_PATH="coverage/DifferentialAnalysis$init.coverage" NAME="init Coverage Results" MODIFIED="1560750266785" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/DifferentialAnalysis$test.coverage" NAME="test Coverage Results" MODIFIED="1560859738675" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/DifferentialAnalysis$__init__.coverage" NAME="__init__ Coverage Results" MODIFIED="1560860400254" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/iris" />
@@ -550,9 +596,6 @@
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
       <provider selected="true" editor-type-id="csv-text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RandomForest.py">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/iris_model/checkpoint" />
     <entry file="file://D:/Anaconda3/Lib/site-packages/sklearn/preprocessing/label.py">
@@ -671,11 +714,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/classifier/normalized.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2898">
+        <state relative-caret-position="1760">
           <caret line="69" column="27" selection-start-line="69" selection-start-column="27" selection-end-line="69" selection-end-column="27" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
+            <element signature="e#671#931#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Anaconda3/Lib/site-packages/pyhive/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Anaconda3/envs/py36/Lib/codecs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="308" selection-start-line="308" selection-end-line="308" />
         </state>
       </provider>
     </entry>
@@ -689,32 +749,72 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/different/differTrain.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/classifier/TrainingModel.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="22" column="42" lean-forward="true" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
-          <folding>
-            <element signature="e#15#33#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-588">
+          <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/init.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="497">
-          <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
+        <state relative-caret-position="563">
+          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/different/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/classifier/classification.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="72" column="10" lean-forward="true" selection-start-line="72" selection-start-column="10" selection-end-line="72" selection-end-column="10" />
+        <state relative-caret-position="231">
+          <caret line="81" column="18" selection-start-line="81" selection-start-column="18" selection-end-line="81" selection-end-column="18" />
           <folding>
             <element signature="e#0#53#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/different/differTrain.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+          <folding>
+            <element signature="e#24#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/different/isolation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="15" column="14" lean-forward="true" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/sklearn/neighbors/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="588">
+          <caret line="25" column="39" selection-start-line="24" selection-start-column="16" selection-end-line="25" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/different/localOutlierFactor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="7" column="46" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#46#0" expanded="true" />
           </folding>
         </state>
       </provider>

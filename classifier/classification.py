@@ -8,7 +8,7 @@ from sklearn.tree.export import export_text
 from sklearn.metrics import accuracy_score
 
 
-def skDecisionTreeTraining(data, fdata, sdata, time, target, colname):
+def skDecisionTreeTrain(data, fdata, sdata, time, target, colname):
     decision_tree = DecisionTreeClassifier(random_state=1, max_depth=10)
 
     decision_tree = decision_tree.fit(fdata, target)
@@ -20,7 +20,7 @@ def skDecisionTreeTraining(data, fdata, sdata, time, target, colname):
     print(accuracy_score(target, predict))
 
 
-def tfDNNClassiferTraining(data, fdata, sdata, time, target, colName):
+def tfDNNClassiferTrain(data, fdata, sdata, time, target, colName):
     # 每行数据3个特征，都是real-value的
     # feature_columns = [tf.contrib.layers.real_valued_column("", dimension=3)]
     feature_columns = [tf.contrib.layers.real_valued_column("", dimension=5)]
@@ -54,7 +54,7 @@ def tfDNNClassiferTraining(data, fdata, sdata, time, target, colName):
     # print("New Samples, Class Predictions:{}".format(predictions))
 
 
-def tfLinearClassifierTraing(data, fdata, sdata, time, target, colname):
+def tfLinearClassifierTrain(data, fdata, sdata, time, target, colname):
     # feature_columns = tf.contrib.learn.infer_real_valued_columns_from_input(X_train)
     feature_columns = [tf.contrib.layers.real_valued_column("", dimension=3)]
     linclf = tf.contrib.learn.LinearClassifier(feature_columns=feature_columns,
@@ -78,7 +78,8 @@ def tfLinearClassifierTraing(data, fdata, sdata, time, target, colname):
 def classifier(data, model):
     if model == 'dt':
         curmodel = load('decision_tree.model')
-        res = model.predict(data)
+        res = curmodel.predict(data)
+        print (res)
     elif model == 'dnn':
         with tf.Session() as sess:
             new_saver = tf.train.import_meta_graph('classifier/DNN_Model/model.ckpt-20000.meta')
