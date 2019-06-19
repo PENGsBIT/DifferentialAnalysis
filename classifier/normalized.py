@@ -11,20 +11,18 @@ def formatStr(x):
 
 
 def formatTime(data):
-    data=data.astype('str')
+    data = data.astype('str')
     label_encoder = LabelEncoder()
     for col in range(data.shape[1]):
-        temp=data[:,col]
-        data[:,col] = label_encoder.fit_transform(temp)
-    data=formatStructuredData(data)
+        temp = data[:, col]
+        data[:, col] = label_encoder.fit_transform(temp)
+    data = formatStructuredData(data)
     return data
     # d = []
     # for col in range(data.shape[1]):
     #     for row in range(data.shape[0]):
     #         time=data[row,col]
     #         index=d.index(time)
-
-
 
 
 def date_compare(time1, time2):
@@ -69,4 +67,4 @@ def formatTarget(data):
             bad += 1
     # print(good)
     # print(bad)
-    return data
+    return data.astype('int')
