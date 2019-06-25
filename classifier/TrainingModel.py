@@ -2,6 +2,8 @@
 import numpy as np
 import env
 import MySQLdb
+from normalized import *
+from classification import *
 
 if __name__ == '__main__':
     connect = MySQLdb.Connect(host=env.host, port=env.port, user=env.user, passwd=env.password, db=env.db)
